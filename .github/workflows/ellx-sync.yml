@@ -2,7 +2,8 @@ name: Ellx sync
 
 on:
   push:
-    - master
+    branches:
+      - master
 
 jobs:
   test-client:
