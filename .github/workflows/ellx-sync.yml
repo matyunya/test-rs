@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: matyunya/ellx-sync@master
+      - uses: matyunya/ellx-sync@testtt
         with:
           ellx-url: https://test-api.ellx.io
           key: 1593590838677,GLRf4uxyRQwI60sAIvznXIswEGFRJQNeOQbcu2yvM4u2NSiLbL9971CQWz7pErHTQ04jGZ_UzcqUSVFFD8PfzA
