@@ -12,5 +12,3 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: matyunya/ellx-sync@1
-        with:
-          key: {{ secrets.ELLX_KEY }}
