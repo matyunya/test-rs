@@ -1,4 +1,4 @@
-name: Ellx sync test
+name: Sync repo with Ellx
 
 on:
   push:
@@ -6,12 +6,12 @@ on:
       - master
 
 jobs:
-  test-client:
-    name: Sync
+  sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - uses: matyunya/ellx-sync@master
         with:
-          ellxUrl: https://test-api.ellx.io
-          key: ${{ secrets.ELLX_KEY }}
+          ellx-url: https://test-api.ellx.io
+          ellx-key: ${{ secrets.ELLX_KEY }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
